@@ -32,13 +32,16 @@ Besides of data input, users can also choose if their collection private or publ
 ``` *Noted Anonymous users should remember the collection id otherwise it will be lost. ```
 
 # BuildTree
-Phylocloud provides a automated phylogenetic workflows to construct phylogeneies with a simple click. Click [here](https://phylocloud.cgmlab.org/tree_build/) to explore more
+Phylocloud provides a automated phylogenetic workflows to construct phylogeneies with a simple click. Submit nucleotide or amino acids sequences in FASTA format and infer a phylogeny using ETE-Toolkit predefined workflows.  Click [here](https://phylocloud.cgmlab.org/tree_build/) to explore more
 
 Once the job has submit, it will be redirect to result page with job id. After a waiting patiently for a moment, result tree will be render and visualized on the result page. 
 
 ``` *Noted users should remember the job id otherwise it will be lost. ```
 
 # BrowseTree
+In phylocloud we have storage a several of featured collections which is public and open for browsing and download. Click [Featured Collection](https://phylocloud.cgmlab.org/public_cloud/) to enter the public collection portal. Once your interested collection, click the collection title and entered the collection page.
+
+Here we show example of [eggNOG5](https://phylocloud.cgmlab.org/collection_page/61c3074a7b69b966754c2c4e/) collection:
 
 
 
