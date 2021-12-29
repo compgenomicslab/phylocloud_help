@@ -11,8 +11,9 @@ Welcome! PhyloCloud is an easy-to-use online platform for operating and interpre
 Besides of common usage for trees management, we also provide various phylogenetic tools to conduct various analysis
 
  - [Compare tree topologies](#comparetree)
- - [Tree annotation](#annotatetree) with taxonomic information
  - [Query taxonomy databases](#taxaquery) 
+ - [Sequence placement](#sequenceplacement)
+
 
 If you already have a tree, PhyloCloud implemented the state-of-art tree visualizing engine and provide various options for further modification or analysis.
 
@@ -43,8 +44,9 @@ In phylocloud we have storage a several of featured collections which is public 
 
 Here we show example of [eggNOG5](https://phylocloud.cgmlab.org/collection_page/61c3074a7b69b966754c2c4e/) collection:
 
+![eggNOG5Collection](./img/eggNOG5.jpeg)
 
-
-
+- Trees of collection are displayed as tree cards with thumnails, with treecard you can find basic information of each tree, such as owner, title, and download button of tree and alignment(if there is)
+- User can search trees by <strong>tree title</strong> or <strong>node</strong>'s name against public collection or own collection. When users are at collection page, the search filter will switch to Current Collection where allows user to search within collection
 
 
