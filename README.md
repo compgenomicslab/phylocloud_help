@@ -1,5 +1,5 @@
 # Overview
-Welcome! PhyloCloud is an easy-to-use online platform for operating and interpreting phylogenetic trees and multiple sequence alignments, serving as a bridge between complex phylogenomic frameworks and non-expert users. Users can browse the public tree collections or build and save your own trees at your own workplace both registerially and anonymously
+Welcome! [PhyloCloud](https://phylocloud.cgmlab.org/) is an easy-to-use online platform for operating and interpreting phylogenetic trees and multiple sequence alignments, serving as a bridge between complex phylogenomic frameworks and non-expert users. Users can browse the public tree collections or build and save your own trees at your own workplace both registerially and anonymously. https://phylocloud.cgmlab.org/
 
 # Quick Start
  PhyloCloud provides entry point to annotated data and tools for phylogenomic research, regardless of whether registered or anonymous users. The home page of PhyloCloud indicates the most typical features so you can quickly start using PhyloCloud:
@@ -32,13 +32,6 @@ Besides of data input, users can also choose if their collection private or publ
 
 ``` *Noted Anonymous users should remember the collection id otherwise it will be lost. ```
 
-# BuildTree
-Phylocloud provides a automated phylogenetic workflows to construct phylogeneies with a simple click. Submit nucleotide or amino acids sequences in FASTA format and infer a phylogeny using ETE-Toolkit predefined workflows.  Click [here](https://phylocloud.cgmlab.org/tree_build/) to explore more
-
-Once the job has submit, it will be redirect to result page with job id. After a waiting patiently for a moment, result tree will be render and visualized on the result page. 
-
-``` *Noted users should remember the job id otherwise it will be lost. ```
-
 # BrowseTree
 In phylocloud we have storage a several of featured collections which is public and open for browsing and download. Click [Featured Collection](https://phylocloud.cgmlab.org/public_cloud/) to enter the public collection portal. Once your interested collection, click the collection title and entered the collection page.
 
@@ -49,4 +42,46 @@ Here we show example of [eggNOG5](https://phylocloud.cgmlab.org/collection_page/
 - Trees of collection are displayed as tree cards with thumnails, with treecard you can find basic information of each tree, such as owner, title, and download button of tree and alignment(if there is)
 - User can search trees by <strong>tree title</strong> or <strong>node</strong>'s name against public collection or own collection. When users are at collection page, the search filter will switch to Current Collection where allows user to search within collection
 
+# Phylogenomic tools
+# BuildTree
+Phylocloud provides a automated phylogenetic workflows to construct phylogeneies with a simple click. Submit nucleotide or amino acids sequences in FASTA format and infer a phylogeny using ETE-Toolkit predefined workflows.  Click [here](https://phylocloud.cgmlab.org/tree_build/) to explore more
+
+Once the job has submit, it will be redirect to result page with job id. After a waiting patiently for a moment, result tree will be render and visualized on the result page. 
+
+``` *Noted users should remember the job id otherwise it will be lost. ```
+
+# CompareTree
+Phylocloud allows users to compute topological distances between trees and compare differences side-by-side.
+
+
+![treecompare1](./img/treecompare1.jpg)
+![treecompare2](./img/treecompare2.jpg)
+
+Comparison result will be shown below, it consists of two part:
+
+1) the first part is the topological comparisons, once you hover to the target node, it shows the features of the node and the corresponding note in the comparing target will be highlighted.
+
+2) the second part is a statistic summary which contains the information of 
+statistic difference. The reported values are:
+
+- rf, Robinson-Foulds symmetric distance
+- max_rf, maximum Robinson-Foulds value for this comparison
+- norm_rf, Normalized Robinson-Foulds distance (RF/maxRF)
+- eucl dist, Euclidean distance between two trees
+- mismatches, number of mismatches that compare
+- %src_br frequency of edges in target tree found in the reference (1.00 = 100% of branches are found)
+- %ref_br frequency of edges in the reference tree found in target (1.00 = 100% of branches are found)
+- effective_tree_size, Effective tree size used for comparisons (after pruning not shared items)
+- treekoD Average distance among all possible subtrees in the original target trees to the reference tree
+- subtrees Number of subtrees used for the comparison (applies only when duplicated items are use to decomposed target trees)
+
+# TaxaQuery
+Phylocloud allows to download, parse and query a local copy of the NCBI/GTDB taxonomy database.
+
+Query by Ids:
+![taxaexample1](./img/taxaexample1.jpeg)
+![taxaexample2](./img/taxaexample2.jpeg)
+
+Taxa tree result will be shown below
+![taxaquery](./img/taxaquery1.jpeg)
 
