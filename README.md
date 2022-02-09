@@ -93,8 +93,8 @@ Once upload your tree, you are able to visualize it on the TreePage
 
 if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
 
-![taxaexample1](./img/treepage1.jpeg)
+![taxaexample1](./img/treepage1.png)
 
 if you want to perform any tree editing, such as node labeling, layouts editing, click the  <strong>Control Panel</string> on top left corner or right click to target node
 
-![taxaexample1](./img/treepage2.jpeg)
+![taxaexample1](./img/treepage2.png)
