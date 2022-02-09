@@ -17,7 +17,7 @@ Besides of common usage for trees management, we also provide various phylogenet
 
 If you already have a tree, PhyloCloud implemented the state-of-art tree visualizing engine and provide various options for further modification or analysis.
 
-- [Tree visualization](#treepage) with further analysis
+- [Tree visualization](#treepage) with different tree edition, anaylsis and annotation
 
 # UploadTree
 One of the core features in PhyloCloud is to allow user upload multiple trees as a collection. Click the [Upload tree](https://phylocloud.cgmlab.org/) button at the top right corner of the page to open the upload panel.
@@ -53,15 +53,18 @@ Once the job has submit, it will be redirect to result page with job id. After a
 # CompareTree
 Phylocloud allows users to compute topological distances between trees and compare differences side-by-side.
 
-
-![treecompare1](./img/treecompare1.jpg)
-![treecompare2](./img/treecompare2.jpg)
-
 Comparison result will be shown below, it consists of two part:
 
-1) the first part is the topological comparisons, once you hover to the target node, it shows the features of the node and the corresponding note in the comparing target will be highlighted.
+![treecompare1](./img/treecompare1.jpg)
 
-2) the second part is a statistic summary which contains the information of 
+the first part is the topological comparisons, 
+- once you hover to the target node, it shows the features of the node and the corresponding note in the comparing target will be highlighted.
+- mismatches can be tracked up to internal nodes which are highlighted as red dot
+
+![treecompare2](./img/treecompare2.jpg)
+
+
+the second part is a statistic summary which contains the information of 
 statistic difference. The reported values are:
 
 - rf, Robinson-Foulds symmetric distance
@@ -85,3 +88,13 @@ Query by Ids:
 Taxa tree result will be shown below
 ![taxaquery](./img/taxaquery1.jpeg)
 
+# TreePage
+Once upload your tree, you are able to visualize it on the TreePage
+
+if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
+
+![taxaexample1](./img/treepage1.jpeg)
+
+if you want to perform any tree editing, such as node labeling, layouts editing, click the  <strong>Control Panel</string> on top left corner or right click to target node
+
+![taxaexample1](./img/treepage2.jpeg)
