@@ -91,6 +91,8 @@ Taxa tree result will be shown below
 # TreePage
 Once upload your tree, you are able to visualize it on the TreePage
 
+![quickstart](./img/figure_2_test_5_caption_2.jpg)
+
 if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
 
 ![taxaexample1](./img/treepage1.png)
