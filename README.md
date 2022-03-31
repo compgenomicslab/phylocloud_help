@@ -140,3 +140,17 @@ In this example case, delimiter is "_", so we need to replace "." with `_` .
 ![taxaexample1](./img/treeevol2.jpg)
 
 After annotation, Speciation events are lable as blue dots, and Duplication is red dots at the last comman ancestors 
+
+## 3) Link to Alignment
+
+This action will link a multiple sequence alignment to the current tree.
+
+check example tree https://phylocloud.cgmlab.org/tree_page/6245c056721288d60d0041ab/
+with demo msa
+
+After added alignment file, click `Alignment` layout on `Control panel`, alignment layout will be displayed
+![taxaexample1](./img/treealign1.png)
+
+
+
+
