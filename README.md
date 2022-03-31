@@ -18,6 +18,7 @@ Besides of common usage for trees management, we also provide various phylogenet
 If you already have a tree, PhyloCloud implemented the state-of-art tree visualizing engine and provide various options for further modification or analysis.
 
 - [Tree visualization](#treepage) with different tree edition, anaylsis and annotation
+- [Tree Annotation](#treeannotation) annotate trees with taxonomic, evolutionary events
 
 # UploadTree
 One of the core features in PhyloCloud is to allow user upload multiple trees as a collection. Click the [Upload tree](https://phylocloud.cgmlab.org/) button at the top right corner of the page to open the upload panel.
@@ -93,10 +94,49 @@ Once upload your tree, you are able to visualize it on the TreePage
 
 ![quickstart](./img/figure_2_test_5_caption_2.jpg)
 
-if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
 
-![taxaexample1](./img/treepage1.png)
 
 if you want to perform any tree editing, such as node labeling, layouts editing, click the  <strong>Control Panel</string> on top left corner or right click to target node
 
 ![taxaexample1](./img/treepage2.png)
+
+# TreeAnnotation
+
+if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
+
+![taxaexample1](./img/treepage1.png)
+
+Currently we provide four options of analysis:
+
+## 1) Taxonomic annotation
+This action will extract taxa information from the tree leaves and annotated the tree accordingly.
+
+By default, NCBI/GTDB TaxIDs will be extracted from the leaf names by splitting by the dot symbol (e.g, delimiter='.'), and taking the first element of the string (index=0), and choose NCBI or GTDB for Taxa DB.
+
+NCBI annotation example https://phylocloud.cgmlab.org/tree_page/61c3061f33448902b5c2882b/
+
+GTDB annotation example https://phylocloud.cgmlab.org/tree_page/6234703aa614694328db1570/
+
+![taxaexample1](./img/treeannotate1.png)
+
+After select correctly column info, click Annotate
+
+![taxaexample1](./img/treeannotate2.png)
+
+Taxa info will be activated in tree layouts at aligned panel
+
+
+## 2) Evolutionary annotation
+This action will scan tree topology and use species information of each leaf to infer speciation and duplication events.
+
+By deafult, species names are extracted by splitting leaf names by the dot symbol (delimiter='.'), and taking the first element (index=0)
+
+Check example https://phylocloud.cgmlab.org/tree_page/62458ebb0d85d1b583543600/
+
+![taxaexample1](./img/treeevol1.png)
+
+In this example case, delimiter is "_", so we need to replace "." with `_` . 
+
+![taxaexample1](./img/treeevol2.jpg)
+
+After annotation, Speciation events are lable as blue dots, and Duplication is red dots at the last comman ancestors 
