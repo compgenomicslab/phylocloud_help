@@ -18,7 +18,7 @@ Besides of common usage for trees management, we also provide various phylogenet
 If you already have a tree, PhyloCloud implemented the state-of-art tree visualizing engine and provide various options for further modification or analysis.
 
 - [Tree visualization](#treepage) with different tree edition, anaylsis and annotation
-- [Tree Annotation](#treeannotation) annotate trees with taxonomic, evolutionary events
+- [Tree export](#treeexport) export tree with different format, and share
 
 # UploadTree
 One of the core features in PhyloCloud is to allow user upload multiple trees as a collection. Click the [Upload tree](https://phylocloud.cgmlab.org/) button at the top right corner of the page to open the upload panel.
@@ -91,24 +91,30 @@ Taxa tree result will be shown below
 
 # TreePage
 Once upload your tree, you are able to visualize it on the TreePage
-
 ![quickstart](./img/figure_2_test_5_caption_2.jpg)
 
+## A) General Interface
+PhyloCloud uses the new visualisation framework implemented in ETE 4.0, which allows for the interactive exploration of huge phylogenies based on a context-based adaptive zooming strategy. It allows for quick searches within large tree topologies, where each search can be associated to a different label and colour. By hover over target node or clade, it shows properties information(if there is any) of related node. By default, ecah node contain three basic properties, <em>name</em>,  <em>dist</em>, and <em>support</em>.
 
+## B) Control Panel
+Control Panel of tree view is consists of three major tabs:
+- <strong>Layout</strong> includes the basic options in regards to general tree layout information, including tree display mode, nodes collapse degree, annotation layout, etc
+- <strong>Select & Search</strong> provides options for choose colors for selected nodes or clades. It also provide function for searching target node with regular expression by clicking "new search" button. Noted that searching function can be also triggered with the shortcut key "/" or clicking a direct button to the tree view panel 
+- <strong>Advance</strong> tab provides more specific options in regards to scale level, width, height from tree view to minimap.
 
-if you want to perform any tree editing, such as node labeling, layouts editing, click the  <strong>Control Panel</string> on top left corner or right click to target node
+## C) Node Panel
+The node editor panel provides access to node-specific actions, such as creating subtrees, collapsing, pruning, rooting, and more.
 
-![taxaexample1](./img/treepage2.png)
+## D) Tree Analysis
 
-# TreeAnnotation
+In order to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</strong> from the navigator
+Currently we provide four options of analysis.
 
-if you want to perform any analysis or annotations, such as taxonomic or evolutionary detection, click the <strong>Analyze</string> from the navigator
-
-![taxaexample1](./img/treepage1.png)
-
-Currently we provide four options of analysis:
-
-## 1) Taxonomic annotation
+### Topology Editing
+Here you can find topology modifications such as automatic re-rooting, pruning, ladderizing branches, resolving polytomies or converting tree topology into an ultrametric. 
+  
+### Tree Annotation
+### 1) Taxonomic annotation
 This action will extract taxa information from the tree leaves and annotated the tree accordingly.
 
 By default, NCBI/GTDB TaxIDs will be extracted from the leaf names by splitting by the dot symbol (e.g, delimiter='.'), and taking the first element of the string (index=0), and choose NCBI or GTDB for Taxa DB.
@@ -125,8 +131,9 @@ After select correctly column info, click Annotate
 
 Taxa info will be activated in tree layouts at aligned panel
 
+    *Notes that PhyloCloud adopts GTDB Release 202, annotate it with different GTDB ids may encounter issues 
 
-## 2) Evolutionary annotation
+### 2) Evolutionary annotation
 This action will scan tree topology and use species information of each leaf to infer speciation and duplication events.
 
 By deafult, species names are extracted by splitting leaf names by the dot symbol (delimiter='.'), and taking the first element (index=0)
@@ -146,11 +153,12 @@ After annotation, Speciation events are lable as blue dots, and Duplication is r
 This action will link a multiple sequence alignment to the current tree.
 
 check example tree https://phylocloud.cgmlab.org/tree_page/6245c056721288d60d0041ab/
-with demo msa
+with demo msa 
 
 After added alignment file, click `Alignment` layout on `Control panel`, alignment layout will be displayed
 ![taxaexample1](./img/treealign1.png)
 
+*Noted the above changes can be either discarded after testing or saved permanently into the database by clicking <strong>Save Changes </strong> on the top right corner
 
-
+# TreeExport
 
