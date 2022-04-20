@@ -1,6 +1,8 @@
 # Overview
 Welcome! [PhyloCloud](https://phylocloud.cgmlab.org/) is an easy-to-use online platform for operating and interpreting phylogenetic trees and multiple sequence alignments, serving as a bridge between complex phylogenomic frameworks and non-expert users. Users can browse the public tree collections or build and save your own trees at your own workplace both registerially and anonymously. https://phylocloud.cgmlab.org/
 
+![uploadTree](./img/phylocloud_graphical_abstract.png)
+
 # Quick Start
  PhyloCloud provides entry point to annotated data and tools for phylogenomic research, regardless of whether registered or anonymous users. The home page of PhyloCloud indicates the most typical features so you can quickly start using PhyloCloud:
 
@@ -161,4 +163,12 @@ After added alignment file, click `Alignment` layout on `Control panel`, alignme
 *Noted the above changes can be either discarded after testing or saved permanently into the database by clicking <strong>Save Changes </strong> on the top right corner
 
 # TreeExport
+the Export tab provide tree export functions. Depending on the export format selected, several additional options are available:
 
+![taxaexample1](./img/treeexport.png)
+
+- <strong>Text</strong> where users can choose to download plain newick file or full annotated newick containning all features information
+
+- <strong>Image</strong> where PhyloCloud provides PDF and HTML format for tree image
+
+- <strong>Tree view</strong> users can share treeview session by clicking <em>share</em> button to copy url link to clipboard. *note that for registered users, tree status must be set to <strong>Public</strong>(default) to be able to be read by other users
