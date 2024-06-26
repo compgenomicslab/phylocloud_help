@@ -37,7 +37,7 @@ Once open on some certain tree in the dataset, each tree contains several of lay
 
 Although the annotations of each tree contains more information! Such information are stored in each node, users can click on each node to check the annotations. For example, each sequence which contains UCSC information has a portal to corresponding UCSC Cell Browser. 
 
-Click on "Show node info" for more annotation in tree node
+Click on "Show node info" for more annotation in tree node (Example https://phylocloud.cgmlab.org/tree_page/64592cb28cc8cfa20442588f/)
 ![EvocellCollection](./img/evocell7.png)
 
 Each annotation is shown as dictionary, especially UCSC annotation, which is a hyperlink to corresponding UCSC Cell Browser
